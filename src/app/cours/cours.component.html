@@ -9,10 +9,10 @@
         <form action="">
           <table class="table table-borderless">
 <tr><td>fichier</td><td><input type="file"  (change)="onFileSelected($event)" [(ngModel)]="cours.url" class="form-control" name="f"></td></tr>
-<tr><td>Detection</td><td><input type="text" [(ngModel)]="cours.detection" class="form-control" name="matiere"></td></tr>
+<tr><td>Titre</td><td><input type="text" [(ngModel)]="cours.detection" class="form-control" name="matiere"></td></tr>
 <tr><td>description</td><td><textarea name="description" [(ngModel)]="cours.description" class="form-control"></textarea></td></tr>
 <tr><td>classiffication</td><td><input type="text" [(ngModel)]="cours.classe" class="form-control" name="classe"></td></tr>
-<!--tr><td colspan="2"><button class="btn btn-primary" (click)="add()">Ajouter</button></td></tr-->
+<!tr><td colspan="2"><button class="btn btn-primary" (click)="add()">Ajouter</button></td></tr>
 
 
 
@@ -41,7 +41,7 @@
        
            
             <td>
-              <img src="{{cr.url}}" height="100" width="100">
+              <a href="{{cr.url}}">Téléchagez</a>
             </td>
             <td><button (click)="delete(cr.id)" class="btn btn-danger">Supprimer</button></td>
           </tr>

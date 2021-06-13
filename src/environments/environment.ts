@@ -6,13 +6,12 @@ export const environment = {
   production: false,
   firebase:
   {
-    apiKey: "AIzaSyAU2-_9axlMtx7rOE94MIdZYZ5FDeF314s",
-    authDomain: "insectes-bca64.firebaseapp.com",
-    projectId: "insectes-bca64",
-    storageBucket: "insectes-bca64.appspot.com",
-    messagingSenderId: "578411072107",
-    appId: "1:578411072107:web:0d55fc5e213144da85bf2e",
-    measurementId: "G-603RP901BL"
+    apiKey: "AIzaSyAZE_cuotPBDRIjjpdkOeZXSD52keX5qNE",
+    authDomain: "cowork-53682.firebaseapp.com",
+    projectId: "cowork-53682",
+    storageBucket: "cowork-53682.appspot.com",
+    messagingSenderId: "419889792370",
+    appId: "1:419889792370:web:85fc3656459bd0c1b889eb"
 
 
   }

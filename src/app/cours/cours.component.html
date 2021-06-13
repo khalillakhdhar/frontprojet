@@ -3,16 +3,15 @@
       <div class="card-header">
         <h3 align="center" >Gestion des detection<br>
         
-          <span align="center" *ngIf="fb!=''" ><img height="100" width="100" [src]="fb"></span>
 
         </h3>
         <form action="">
           <table class="table table-borderless">
 <tr><td>fichier</td><td><input type="file"  (change)="onFileSelected($event)" [(ngModel)]="cours.url" class="form-control" name="f"></td></tr>
-<tr><td>Titre</td><td><input type="text" [(ngModel)]="cours.detection" class="form-control" name="matiere"></td></tr>
+<tr><td>titre</td><td><input type="text" [(ngModel)]="cours.detection" class="form-control" name="matiere"></td></tr>
 <tr><td>description</td><td><textarea name="description" [(ngModel)]="cours.description" class="form-control"></textarea></td></tr>
 <tr><td>classiffication</td><td><input type="text" [(ngModel)]="cours.classe" class="form-control" name="classe"></td></tr>
-<!tr><td colspan="2"><button class="btn btn-primary" (click)="add()">Ajouter</button></td></tr>
+<tr><td colspan="2"><button class="btn btn-primary" (click)="add()">Ajouter</button></td></tr>
 
 
 
@@ -27,8 +26,8 @@
           <thead>
           <tr>
             <th>Description</th>
-            <th>date de detection</th>
-            <th>classification</th>
+            <th>date </th>
+            <th>Document</th>
 
             <th>Action</th>
           </tr>
@@ -41,7 +40,7 @@
        
            
             <td>
-              <a href="{{cr.url}}">Téléchagez</a>
+              <a href="{{cr.url}}">téléchargez</a>
             </td>
             <td><button (click)="delete(cr.id)" class="btn btn-danger">Supprimer</button></td>
           </tr>
@@ -51,7 +50,7 @@
           <tr>
             <th>Description</th>
             <th>date ajout</th>
-            <th>classe</th>
+            <th>Document</th>
          
 
             <th>Action</th>
